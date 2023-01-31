@@ -40,8 +40,18 @@
 <br>
 <button id="change-text-btn">Change my text</button>
 
-<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous"></script>
 <script src="solutions.js"></script>
 
+<script>
+    //#6
+    // When the button with an id of bold-btn is clicked, that button's font weight should change to bold.
+    $(document).ready(function () {
+        $("bold-btn").click(function () {
+            $(this).css("font-weight", "bold")
+        })
+    })
+</script>
 </body>
 </html>
